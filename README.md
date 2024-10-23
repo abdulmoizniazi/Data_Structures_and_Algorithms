@@ -86,7 +86,7 @@ Here’s a list of golden rules for Data Structures and Algorithms (DSA) that ca
 These "golden rules" can help you quickly determine which algorithm or data structure to apply based on the problem at hand. Let me know if you need clarification on any specific topic!
 
 
-###1. Bubble Sort:
+### 1. Bubble Sort:
 Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process is repeated until the list is sorted.
 
 Example: Initial array: [5, 2, 9, 1, 5, 6]
@@ -106,7 +106,7 @@ Compare 5 and 5: No swap
 Compare 5 and 6: No swap (remaining elements are sorted)
 Continue this process until no more swaps are needed.
 
-###2. Selection Sort:
+### 2. Selection Sort:
 Selection Sort works by finding the smallest element in the unsorted part of the array and swapping it with the first unsorted element.
 
 Example: Initial array: [5, 2, 9, 1, 5, 6]
@@ -126,7 +126,7 @@ Pass 5: Finally, swap 9 and 6:
 
 Swap 9 and 6: [1, 2, 5, 5, 6, 9]
 
-###3. Insertion Sort:
+### 3. Insertion Sort:
 Insertion Sort works by taking elements from the unsorted portion of the array and inserting them into the correct position in the sorted portion.
 
 Example: Initial array: [5, 2, 9, 1, 5, 6]
@@ -148,7 +148,7 @@ Step 6: Insert 6 into [1, 2, 5, 5, 9]:
 
 Move 9 right, insert 6: [1, 2, 5, 5, 6, 9]
 
-###4. Merge Sort:
+### 4. Merge Sort:
 Merge Sort divides the array into two halves, recursively sorts the two halves, and then merges them.
 
 Example: Initial array: [5, 2, 9, 1, 5, 6]
@@ -166,7 +166,7 @@ Merge [1] and [5, 6] → [1, 5, 6]
 Finally, merge [2, 5, 9] and [1, 5, 6]:
 Merge step by step to get [1, 2, 5, 5, 6, 9]
 
-###5. Quick Sort:
+### 5. Quick Sort:
 Quick Sort picks a pivot and partitions the array so that elements less than the pivot are on the left, and those greater than the pivot are on the right. It then recursively sorts the partitions.
 
 Example: Initial array: [5, 2, 9, 1, 5, 6]
