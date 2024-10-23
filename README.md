@@ -84,3 +84,100 @@ Here’s a list of golden rules for Data Structures and Algorithms (DSA) that ca
    - **Use Case**: Finding the shortest path in an unweighted graph, social networks.
 
 These "golden rules" can help you quickly determine which algorithm or data structure to apply based on the problem at hand. Let me know if you need clarification on any specific topic!
+
+
+###1. Bubble Sort:
+Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process is repeated until the list is sorted.
+
+Example: Initial array: [5, 2, 9, 1, 5, 6]
+
+Pass 1:
+
+Compare 5 and 2: Swap → [2, 5, 9, 1, 5, 6]
+Compare 5 and 9: No swap
+Compare 9 and 1: Swap → [2, 5, 1, 9, 5, 6]
+Compare 9 and 5: Swap → [2, 5, 1, 5, 9, 6]
+Compare 9 and 6: Swap → [2, 5, 1, 5, 6, 9]
+Pass 2:
+
+Compare 2 and 5: No swap
+Compare 5 and 1: Swap → [2, 1, 5, 5, 6, 9]
+Compare 5 and 5: No swap
+Compare 5 and 6: No swap (remaining elements are sorted)
+Continue this process until no more swaps are needed.
+
+###2. Selection Sort:
+Selection Sort works by finding the smallest element in the unsorted part of the array and swapping it with the first unsorted element.
+
+Example: Initial array: [5, 2, 9, 1, 5, 6]
+
+Pass 1: Find the smallest element (1), swap it with the first element:
+
+Swap 5 and 1: [1, 2, 9, 5, 5, 6]
+Pass 2: Find the smallest in the remaining unsorted portion [2, 9, 5, 5, 6], which is 2. No swap needed.
+
+Pass 3: Find the smallest in [9, 5, 5, 6], which is 5, and swap with 9:
+
+Swap 9 and 5: [1, 2, 5, 9, 5, 6]
+Pass 4: Find the smallest in [9, 5, 6], which is 5, and swap with 9:
+
+Swap 9 and 5: [1, 2, 5, 5, 9, 6]
+Pass 5: Finally, swap 9 and 6:
+
+Swap 9 and 6: [1, 2, 5, 5, 6, 9]
+
+###3. Insertion Sort:
+Insertion Sort works by taking elements from the unsorted portion of the array and inserting them into the correct position in the sorted portion.
+
+Example: Initial array: [5, 2, 9, 1, 5, 6]
+
+Step 1: The first element (5) is already sorted.
+
+Step 2: Insert 2 into the sorted section [5]:
+
+Move 5 right and insert 2: [2, 5, 9, 1, 5, 6]
+Step 3: Insert 9 into [2, 5]. No changes since 9 is greater than 5.
+
+Step 4: Insert 1 into [2, 5, 9]:
+
+Move 9, 5, and 2 right, and insert 1: [1, 2, 5, 9, 5, 6]
+Step 5: Insert 5 into [1, 2, 5, 9]:
+
+Move 9 right, insert 5: [1, 2, 5, 5, 9, 6]
+Step 6: Insert 6 into [1, 2, 5, 5, 9]:
+
+Move 9 right, insert 6: [1, 2, 5, 5, 6, 9]
+
+###4. Merge Sort:
+Merge Sort divides the array into two halves, recursively sorts the two halves, and then merges them.
+
+Example: Initial array: [5, 2, 9, 1, 5, 6]
+
+Divide the array into two halves: [5, 2, 9] and [1, 5, 6]
+Recursively sort the halves:
+Sort [5, 2, 9]:
+Split into [5] and [2, 9]
+Sort [2, 9] → Merge to get [2, 9]
+Merge [5] and [2, 9] → [2, 5, 9]
+Sort [1, 5, 6]:
+Split into [1] and [5, 6]
+Merge [5] and [6] → [5, 6]
+Merge [1] and [5, 6] → [1, 5, 6]
+Finally, merge [2, 5, 9] and [1, 5, 6]:
+Merge step by step to get [1, 2, 5, 5, 6, 9]
+
+###5. Quick Sort:
+Quick Sort picks a pivot and partitions the array so that elements less than the pivot are on the left, and those greater than the pivot are on the right. It then recursively sorts the partitions.
+
+Example: Initial array: [5, 2, 9, 1, 5, 6]
+
+Choose a pivot (e.g., 5):
+
+Partition: [2, 1] (less than 5) and [9, 5, 6] (greater than or equal to 5)
+Recursively sort both partitions:
+
+Sort [2, 1]: Choose 2 as the pivot, resulting in [1, 2]
+Sort [9, 5, 6]: Choose 6 as the pivot, resulting in [5, 6, 9]
+Combine the partitions:
+
+Sorted array: [1, 2, 5, 5, 6, 9]
