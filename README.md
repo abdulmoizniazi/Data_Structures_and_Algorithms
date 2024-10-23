@@ -86,6 +86,8 @@ Here’s a list of golden rules for Data Structures and Algorithms (DSA) that ca
 These "golden rules" can help you quickly determine which algorithm or data structure to apply based on the problem at hand. Let me know if you need clarification on any specific topic!
 
 
+# Sorting Algorithms
+
 ### 1. Bubble Sort:
 Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process is repeated until the list is sorted.
 
